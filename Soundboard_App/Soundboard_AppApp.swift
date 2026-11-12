@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct Soundboard_AppApp: App {
+struct SoundboardApp: App {
+    @StateObject private var store = SoundboardStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }
