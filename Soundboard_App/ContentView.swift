@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var pads: [Pad] = (1...12).map { Pad(title: "Pad \($0)") }
+
+    private let columns = [GridItem(.adaptive(minimum: 100), spacing: 12)]
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 12) {
+                    ForEach(pads) { pad in
+                        PadButton(pad: pad) {
+                            print("Tapped \(pad.title)")
+                        }
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle("Soundboard")
         }
-        .padding()
     }
 }
 
