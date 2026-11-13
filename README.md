@@ -3,7 +3,7 @@
 **Developer:** Corbett Manser
 
 ## Overview
-**iOS Soundboard** is a customizable soundboard app where every button plays a sound of your choice! Pick any audio file you have downloaded on your iPhone, assign it to a button, and play it with a single tap. Rename each button so you always know which sound you are about to play, and swap sounds whenever you would like. Happy sound-boarding!
+**Soundboard App** is a customizable soundboard app where every button plays a sound of your choice! Pick any audio file you have downloaded on your iPhone, assign it to a button, and play it with a single tap. Rename each button so you always know which sound you are about to play, and swap sounds whenever you would like. Happy sound-boarding!
 
 ## Features
 - **Soundboard Grid:** A scrollable grid of buttons (pads), each one mapped to its own sound. Tapping a pad plays its sound instantly
